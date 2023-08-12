@@ -2,18 +2,107 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Мой веб-сайт</title>
+  <title>𝓣𝓶 𝓛𝓲𝓶𝓲𝓽𝓮𝓭</title>
   <link rel="stylesheet" href="/static/style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      outline: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    section {
+      width: 100%;
+      height: 100vh;
+      background: linear-gradient(-45deg, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
+      background-size: 400% 400%;
+      position: relative;
+      animation: animate 7.5s ease-in-out infinite;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+      color: #070609;
+      background: rgba(255, 255, 255, .2);
+      padding: 30px;
+      font-size: 70px;
+      border-radius: 10px;
+    }
+
+    h2 {
+      color: #ffd700;
+      background: rgba(7, 4, 4, 0.77);
+      padding: 30px;
+      font-size: 40px;
+      border-radius: 10px;
+    }
+
+    .site-logo {
+      margin-top:50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .site-logo img {
+      margin: 0 30px;
+      width: 120px;
+      height: auto;
+      cursor: pointer;
+      transition: opacity 0.3s ease;
+    }
+
+    .site-logo img:hover {
+      opacity: 0.8;
+    }
+
+    @keyframes animate {
+      0% {
+        background-position: 0 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0 50%;
+      }
+    }
+  </style>
 </head>
 <body>
-<h1>TM LIMITED</h1>
-<div class="link-block">
-  {% for link in links %}
-  <div class="link-item">
-    <a href="{{ link.url }}" class="link-text" target="_blank">{{ link.name }}</a>
-    <p class="description-text">{{ link.description }}</p>
+<section>
+  <div class="site-logo">
+    <a href="https://ibb.co/SBmgtrD" target="_blank">
+      <img src="https://fotohosting.su/images/2023/08/12/Begmenov_Logo-10_avatar-invert5-round.png" alt="Begmenov_Logo-10_avatar-invert5-round.png" border="0">
+    </a>
   </div>
-  {% endfor %}
-</div>
+  <h1>𝐓𝐦 𝐋𝐢𝐦𝐢𝐭𝐞𝐝</h1>
+  <br>
+  <h2>Оставь фото-отзыв и получай <br> <span style="padding-left: 180px;">ПОДАРОК</span></h2>
+  <div class="site-logo">
+    <a href="https://yandex.ru/maps/org/tm_limited_by_berdi_begmenov/83646725806/reviews/?ll=37.663082%2C55.709274&tab=reviews&z=15.09" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Yandex_icon.svg" alt="Yandex Logo">
+    </a>
+    <a href="https://2gis.ru/moscow/firm/70000001063755552/tab/reviews?m=37.663033%2C55.709309%2F16" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d8/2gis-Logo.png" alt="2GIS Logo">
+    </a>
+    <a href="https://zoon.ru/msk/stores/magazin_muzhskoj_odezhdy_tm_limited_by_berdi_begmenov/" target="_blank">
+      <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjIiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCA2MiAxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCB4MT0iNzcuMzQzMTM1NiUiIHkxPSI1MCUiIHgyPSIyMS44MTEyNjczJSIgeTI9IjUwJSIgaWQ9ImxnIj4KICAgICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzYzMzlGNSIgb2Zmc2V0PSIwJSI+PC9zdG9wPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjM0QzRjU1IiBvZmZzZXQ9IjEwMCUiPjwvc3RvcD4KICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPC9kZWZzPgogICAgPHBhdGggZmlsbD0idXJsKCNsZykiIGQ9Ik0wLjU0NDQ0NDQ0NCwwLjk5NjU5NDE2IEwxMy40NTU1NTU2LDAuOTk2NTk0MTYgQzEzLjc1NjI0MzksMC45OTY1OTQxNiAxNCwxLjI0MDM1MDI0IDE0LDEuNTQxMDM4NiBMMTQsNC4wOCBDMTQsNC40MTgxOTQ2MSAxMy44NTMyNDUyLDQuNzM4NDA2NzkgMTMuNTk3NzYxMyw0Ljk2IEw2LjM3Nzc3Nzc4LDExIEwxMy40NTU1NTU2LDExIEMxMy43NTYyNDM5LDExIDE0LDExLjIzOTMxMTcgMTQsMTEuNTQgTDE0LDE0LjQ1NDc5ODcgQzE0LDE0Ljc1NTQ4NyAxMy43NTYyNDM5LDE0Ljk5OTI0MzEgMTMuNDU1NTU1NiwxNC45OTkyNDMxIEwwLjU0NDQ0NDQ0NCwxNC45OTkyNDMxIEMwLjI0Mzc1NjA4MSwxNC45OTkyNDMxIDAsMTQuNzU1NDg3IDAsMTQuNDU0Nzk4NyBMMCwxMS45MiBDMCwxMS41ODE4MDUzIDAuMTQ2NzU0Nzc0LDExLjI2MTU5MzIgMC40MDIyMzg3MTMsMTEuMDQgTDcuNjIyMjIyMjIsNSBMMC41NDQ0NDQ0NDQsNSBDMC4yNDM3NTYwODEsNSAwLDQuNzUwNjg4MzYgMCw0LjQ1IEwwLDEuNTQxMDM4NiBDMCwxLjI0MDM1MDI0IDAuMjQzNzU2MDgxLDAuOTk2NTk0MTYgMC41NDQ0NDQ0NDQsMC45OTY1OTQxNiBaIE0yMywwLjUgQzI0LjQ5Mjg2OTIsMC41IDI1LjgyMzgyNTUsMC44MzU3MTAyODMgMjYuOTM0OTM2NywxLjQ0OTE5ODM0IEMyOC4wNDYwNDc4LDIuMDYyNjg2NCAyOC45MzczMTM2LDIuOTUzOTUyMjMgMjkuNTUwODAxNyw0LjA2NTA2MzM0IEMzMC4xNjQyODk3LDUuMTc2MTc0NDUgMzAuNSw2LjUwNzEzMDgzIDMwLjUsOCBDMzAuNSw5LjQ5Mjg2OTE1IDMwLjE2NDI4OTcsMTAuODIzODI1NSAyOS41NTA4MDE3LDExLjkzNDkzNjcgQzI4LjkzNzMxMzYsMTMuMDQ2MDQ3OCAyOC4wNDYwNDc4LDEzLjkzNzMxMzYgMjYuOTM0OTM2NywxNC41NTA4MDE3IEMyNS44MjM4MjU1LDE1LjE2NDI4OTcgMjQuNDkyODY5MiwxNS41IDIzLDE1LjUgQzIxLjUwNzEzMDksMTUuNSAyMC4xNzYxNzQ1LDE1LjE2NDI4OTcgMTkuMDY1MDYzNCwxNC41NTA4MDE3IEMxNy45NTM5NTIyLDEzLjkzNzMxMzYgMTcuMDYyNjg2NCwxMy4wNDYwNDc4IDE2LjQ0OTE5ODQsMTEuOTM0OTM2NyBDMTUuODM1NzEwMywxMC44MjM4MjU1IDE1LjUsOS40OTI4NjkxNSAxNS41LDggQzE1LjUsNi41MDcxMzA4MyAxNS44MzU3MTAzLDUuMTc2MTc0NDUgMTYuNDQ5MTk4NCw0LjA2NTA2MzM0IEMxNy4wNjI2ODY0LDIuOTUzOTUyMjMgMTcuOTUzOTUyMiwyLjA2MjY4NjQgMTkuMDY1MDYzNCwxLjQ0OTE5ODM0IEMyMC4xNzYxNzQ1LDAuODM1NzEwMjgzIDIxLjUwNzEzMDksMC41IDIzLDAuNSBaIE0yMyw0LjUgQzIyLjI4NTg4MTEsNC41IDIxLjY1ODk1MjUsNC42NTA4NDkyNCAyMS4xNDA0MzQsNC45MzEzMjgxIEMyMC42MjE5MTU1LDUuMjExODA2OTYgMjAuMjExODA3LDUuNjIxOTE1NDUgMTkuOTMxMzI4MSw2LjE0MDQzMzk3IEMxOS42NTA4NDkyLDYuNjU4OTUyNDkgMTkuNSw3LjI4NTg4MTA0IDE5LjUsOCBDMTkuNSw4LjcxNDExODkzIDE5LjY1MDg0OTIsOS4zNDEwNDc1NCAxOS45MzEzMjgxLDkuODU5NTY2MDMgQzIwLjIxMTgwNywxMC4zNzgwODQ1IDIwLjYyMTkxNTUsMTAuNzg4MTkzIDIxLjE0MDQzNCwxMS4wNjg2NzE5IEMyMS42NTg5NTI1LDExLjM0OTE1MDggMjIuMjg1ODgxMSwxMS41IDIzLDExLjUgQzIzLjcxNDExODksMTEuNSAyNC4zNDEwNDc1LDExLjM0OTE1MDggMjQuODU5NTY2LDExLjA2ODY3MTkgQzI1LjM3ODA4NDUsMTAuNzg4MTkzIDI1Ljc4ODE5MywxMC4zNzgwODQ1IDI2LjA2ODY3MTksOS44NTk1NjYwMyBDMjYuMzQ5MTUwOCw5LjM0MTA0NzU0IDI2LjUsOC43MTQxMTg5MyAyNi41LDggQzI2LjUsNy4yODU4ODEwNCAyNi4zNDkxNTA4LDYuNjU4OTUyNDkgMjYuMDY4NjcxOSw2LjE0MDQzMzk3IEMyNS43ODgxOTMsNS42MjE5MTU0NSAyNS4zNzgwODQ1LDUuMjExODA2OTYgMjQuODU5NTY2LDQuOTMxMzI4MSBDMjQuMzQxMDQ3NSw0LjY1MDg0OTI0IDIzLjcxNDExODksNC41IDIzLDQuNSBaIE0zOSwwLjUgQzQwLjQ5Mjg2OTIsMC41IDQxLjgyMzgyNTUsMC44MzU3MTAyODMgNDIuOTM0OTM2NywxLjQ0OTE5ODM0IEM0NC4wNDYwNDc4LDIuMDYyNjg2NCA0NC45MzczMTM2LDIuOTUzOTUyMjMgNDUuNTUwODAxNyw0LjA2NTA2MzM0IEM0Ni4xNjQyODk3LDUuMTc2MTc0NDUgNDYuNSw2LjUwNzEzMDgzIDQ2LjUsOCBDNDYuNSw5LjQ5Mjg2OTE1IDQ2LjE2NDI4OTcsMTAuODIzODI1NSA0NS41NTA4MDE3LDExLjkzNDkzNjcgQzQ0LjkzNzMxMzYsMTMuMDQ2MDQ3OCA0NC4wNDYwNDc4LDEzLjkzNzMxMzYgNDIuOTM0OTM2NywxNC41NTA4MDE3IEM0MS44MjM4MjU1LDE1LjE2NDI4OTcgNDAuNDkyODY5MiwxNS41IDM5LDE1LjUgQzM3LjUwNzEzMDksMTUuNSAzNi4xNzYxNzQ1LDE1LjE2NDI4OTcgMzUuMDY1MDYzNCwxNC41NTA4MDE3IEMzMy45NTM5NTIyLDEzLjkzNzMxMzYgMzMuMDYyNjg2NCwxMy4wNDYwNDc4IDMyLjQ0OTE5ODQsMTEuOTM0OTM2NyBDMzEuODM1NzEwMywxMC44MjM4MjU1IDMxLjUsOS40OTI4NjkxNSAzMS41LDggQzMxLjUsNi41MDcxMzA4MyAzMS44MzU3MTAzLDUuMTc2MTc0NDUgMzIuNDQ5MTk4NCw0LjA2NTA2MzM0IEMzMy4wNjI2ODY0LDIuOTUzOTUyMjMgMzMuOTUzOTUyMiwyLjA2MjY4NjQgMzUuMDY1MDYzNCwxLjQ0OTE5ODM0IEMzNi4xNzYxNzQ1LDAuODM1NzEwMjgzIDM3LjUwNzEzMDksMC41IDM5LDAuNSBaIE0zOSw0LjUgQzM4LjI4NTg4MTEsNC41IDM3LjY1ODk1MjUsNC42NTA4NDkyNCAzNy4xNDA0MzQsNC45MzEzMjgxIEMzNi42MjE5MTU1LDUuMjExODA2OTYgMzYuMjExODA3LDUuNjIxOTE1NDUgMzUuOTMxMzI4MSw2LjE0MDQzMzk3IEMzNS42NTA4NDkyLDYuNjU4OTUyNDkgMzUuNSw3LjI4NTg4MTA0IDM1LjUsOCBDMzUuNSw4LjcxNDExODkzIDM1LjY1MDg0OTIsOS4zNDEwNDc1NCAzNS45MzEzMjgxLDkuODU5NTY2MDMgQzM2LjIxMTgwNywxMC4zNzgwODQ1IDM2LjYyMTkxNTUsMTAuNzg4MTkzIDM3LjE0MDQzNCwxMS4wNjg2NzE5IEMzNy42NTg5NTI1LDExLjM0OTE1MDggMzguMjg1ODgxMSwxMS41IDM5LDExLjUgQzM5LjcxNDExODksMTEuNSA0MC4zNDEwNDc1LDExLjM0OTE1MDggNDAuODU5NTY2LDExLjA2ODY3MTkgQzQxLjM3ODA4NDUsMTAuNzg4MTkzIDQxLjc4ODE5MywxMC4zNzgwODQ1IDQyLjA2ODY3MTksOS44NTk1NjYwMyBDNDIuMzQ5MTUwOCw5LjM0MTA0NzU0IDQyLjUsOC43MTQxMTg5MyA0Mi41LDggQzQyLjUsNy4yODU4ODEwNCA0Mi4zNDkxNTA4LDYuNjU4OTUyNDkgNDIuMDY4NjcxOSw2LjE0MDQzMzk3IEM0MS43ODgxOTMsNS42MjE5MTU0NSA0MS4zNzgwODQ1LDUuMjExODA2OTYgNDAuODU5NTY2LDQuOTMxMzI4MSBDNDAuMzQxMDQ3NSw0LjY1MDg0OTI0IDM5LjcxNDExODksNC41IDM5LDQuNSBaIE02Mi4wMDE3MDI5LDEuNTQyNzcwOTUgTDYyLjAwMTcwMjksMTQuNDU0NTc5OSBDNjIuMDAxNzAyOSwxNC43NTUyODQ1IDYxLjc1NzkzMzYsMTQuOTk5MDUzOCA2MS40NTcyMjksMTQuOTk5MDUzOCBMNTguOTIsMTQuOTk5MDUzOCBDNTguNTgxODIyMSwxNC45OTkwNTM4IDU4LjI2MTYwNDIsMTQuODUyMzIxNCA1OC4wNCwxNC41OTY4NjkxIEw1Miw3LjM3Nzc0NDE0IEw1MiwxNC40NTQ1Nzk5IEM1MiwxNC43NTUyODQ1IDUxLjc1MDcwNDYsMTQuOTk5MDUzOCA1MS40NSwxNC45OTkwNTM4IEw0OC41NDI3NzEsMTQuOTk5MDUzOCBDNDguMjQyMDY2NCwxNC45OTkwNTM4IDQ3Ljk5ODI5NzEsMTQuNzU1Mjg0NSA0Ny45OTgyOTcxLDE0LjQ1NDU3OTkgTDQ3Ljk5ODI5NzEsMS41NDI3NzA5NSBDNDcuOTk4Mjk3MSwxLjI0MjA2NjM0IDQ4LjI0MjA2NjQsMC45OTgyOTcwOCA0OC41NDI3NzEsMC45OTgyOTcwOCBMNTEuMDgsMC45OTgyOTcwOCBDNTEuNDE4MjQ3OSwwLjk5ODI5NzA4IDUxLjczODM5MzgsMS4xNDUwOTAwNyA1MS45NiwxLjQwMDYzMzM0IEw1OCw4LjYyMjI1NTg1IEw1OCwxLjU0Mjc3MDk1IEM1OCwxLjI0MjA2NjM0IDU4LjIzOTI5NTQsMC45OTgyOTcwOCA1OC41NCwwLjk5ODI5NzA4IEw2MS40NTcyMjksMC45OTgyOTcwOCBDNjEuNzU3OTMzNiwwLjk5ODI5NzA4IDYyLjAwMTcwMjksMS4yNDIwNjYzNCA2Mi4wMDE3MDI5LDEuNTQyNzcwOTUgWiI+PC9wYXRoPgo8L3N2Zz4=" alt="Zoon Logo">
+    </a>
+  </div>
+</section>
 </body>
 </html>
+
+
+
+
