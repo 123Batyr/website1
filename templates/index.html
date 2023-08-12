@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Мой веб-сайт</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<h1>TM LIMITED</h1>
+<div class="link-block">
+  {% for link in links %}
+  <div class="link-item">
+    <a href="{{ link.url }}" class="link-text" target="_blank">{{ link.name }}</a>
+    <p class="description-text">{{ link.description }}</p>
+  </div>
+  {% endfor %}
+</div>
+</body>
+</html>
